@@ -44,7 +44,7 @@
     <!-- Navbar Start -->
 
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <img href="index.html" src="img/logo.png" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <img href="index.html" src="img/logo-2.png" class="navbar-brand d-flex align-items-center px-4 px-lg-5" alt="Logo TNM">
            <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>TNM</h2>-->
         </img>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,7 +55,7 @@
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="courses.html" class="nav-item nav-link">Courses</a>
                 <a href="about.html" class="nav-item nav-link">About Us</a>
-                <!--<div class="nav-item dropdown">
+                <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="team.html" class="dropdown-item">Our Team</a>
@@ -63,7 +63,6 @@
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
-            -->
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
@@ -226,11 +225,63 @@
                 <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
                 <h1 class="mb-5">Courses Categories</h1>
             </div>
-            <div class="row g-3">
+            <div class="row g-3" id="course-grid">
+                <aside class="course-container" id="aside-course-1">
+                    <div class="aside-container">
+                        <div class="img-aside-container img-aside-container-width">
+                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                        </div>
+                        <div class="info-aside-container">
+                            <h5>Web Design</h5>
+                            <small class="text-primary">49 Courses</small>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi eos et commodi, molestiae recusandae porro nam repellat atque ratione consequatur id at harum eius quaerat fugiat odio quod excepturi earum?</p>
+                            <input type="button" class="btn btn-primary" value="Close" id="btn-aside-1" onclick="closeAside('aside-course-1')">
+                        </div>
+                    </div>
+                </aside>
+                <aside class="course-container" id="aside-course-2">
+                    <div class="aside-container">
+                        <div class="img-aside-container">
+                            <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                        </div>
+                        <div class="info-aside-container">
+                            <h5>Graphic Design</h5>
+                            <small class="text-primary">49 Courses</small>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi eos et commodi, molestiae recusandae porro nam repellat atque ratione consequatur id at harum eius quaerat fugiat odio quod excepturi earum?</p>
+                            <input type="button" class="btn btn-primary" value="Close" id="btn-aside-1" onclick="closeAside('aside-course-2')">
+                        </div>
+                    </div>
+                </aside>
+                <aside class="course-container" id="aside-course-3">
+                    <div class="aside-container">
+                        <div class="img-aside-container">
+                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                        </div>
+                        <div class="info-aside-container">
+                            <h5>Video Editing</h5>
+                            <small class="text-primary">49 Courses</small>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi eos et commodi, molestiae recusandae porro nam repellat atque ratione consequatur id at harum eius quaerat fugiat odio quod excepturi earum?</p>
+                            <input type="button" class="btn btn-primary" value="Close" id="btn-aside-1" onclick="closeAside('aside-course-3')">
+                        </div>
+                    </div>
+                </aside>
+                <aside class="course-container" id="aside-course-4">
+                    <div class="aside-container">
+                        <div class="img-aside-container">
+                            <img class="img-fluid" src="img/cat-4.jpg" alt="">
+                        </div>
+                        <div class="info-aside-container">
+                            <h5>Online Marketing</h5>
+                            <small class="text-primary">49 Courses</small>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi eos et commodi, molestiae recusandae porro nam repellat atque ratione consequatur id at harum eius quaerat fugiat odio quod excepturi earum?</p>
+                            <input type="button" class="btn btn-primary" value="Close" id="btn-aside-1" onclick="closeAside('aside-course-4')">
+                        </div>
+                    </div>
+                </aside>
                 <div class="col-lg-7 col-md-6">
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
+                            <a class="position-relative d-block overflow-hidden pointer" onclick="openAside('aside-course-1')">
                                 <img class="img-fluid" src="img/cat-1.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Web Design</h5>
@@ -239,7 +290,7 @@
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
+                            <a class="position-relative d-block overflow-hidden pointer" onclick="openAside('aside-course-2')">
                                 <img class="img-fluid" src="img/cat-2.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Graphic Design</h5>
@@ -248,7 +299,7 @@
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
+                            <a class="position-relative d-block overflow-hidden pointer" onclick="openAside('aside-course-3')">
                                 <img class="img-fluid" src="img/cat-3.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Video Editing</h5>
@@ -259,7 +310,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                    <a class="position-relative d-block h-100 overflow-hidden pointer" onclick="openAside('aside-course-4')">
                         <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
                             <h5 class="m-0">Online Marketing</h5>
@@ -607,6 +658,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/coursesButtons.js"></script>
 </body>
 
 </html>
