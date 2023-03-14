@@ -446,3 +446,9 @@
     padding-right: 0;
     border-right: none;
 }
+
+/* Add CSS */
+
+.none {
+    display: none;
+}

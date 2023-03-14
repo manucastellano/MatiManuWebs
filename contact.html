@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="courses.html" class="nav-item nav-link">Services</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
                 <a href="about.html" class="nav-item nav-link">About Us</a>
                 <a href="contact.html" class="nav-item nav-link active">Contact</a>
             </div>
@@ -135,34 +135,37 @@
                 </div>
                 -->
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form id="contactForm">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea> 
                                     <label for="message">Message</label>
                                 </div>
                             </div>
+                            <div class="contact-form-loader text-center none">
+                                <img src="svg/loader.svg" alt="Sending...">
+                              </div>      
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>  
                             </div>
                         </div>
                     </form>
@@ -179,11 +182,11 @@
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-white mb-3">Quick Link</h4>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <!-- <a class="btn btn-link" href="">Privacy Policy</a>
                 <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" href="">FAQs & Help</a>
+                <a class="btn btn-link" href="">FAQs & Help</a> -->
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-white mb-3">Contact</h4>
@@ -270,6 +273,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Custom Javascript -->
+    <script src="js/contactForm.js"></script>
 </body>
 
 </html>
