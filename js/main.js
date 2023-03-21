@@ -56,6 +56,7 @@
     
     // Back to top button
     $(window).scroll(function () {
+        console.log("Scroll top: ",$(this).scrollTop());
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
         } else {
@@ -63,7 +64,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 700, 'easeInOutExpo');
         return false;
     });
 
@@ -71,7 +72,8 @@
     // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
+        autoplayTimeout: 6000,
+        smartSpeed: 1000,
         items: 1,
         dots: false,
         loop: true,
@@ -86,7 +88,7 @@
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 6000,
         center: true,
         margin: 24,
         dots: true,
