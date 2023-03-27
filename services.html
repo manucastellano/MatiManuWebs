@@ -41,24 +41,57 @@
     <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a  href="index.html">
-            <img src="img/logo-2.png" class="navbar-brand d-flex align-items-center px-4 px-lg-5" alt="Logo TNM">
-            <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
-        </a>
+        <!-- Navbar Start -->
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="services.html" class="nav-item nav-link active">Services</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="hdiw.html" class="nav-item nav-link">How does it works</a>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a  href="index.html">
+                <img src="img/logo-2.png" class="navbar-brand d-flex align-items-center px-4 px-lg-5" alt="Logo TNM">
+                <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> -->
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                   <!-- <a href="index.html" class="nav-item nav-link active">Home</a>-->
+    
+                    <div class="nav-item dropdown">
+                        <a href="index.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Home</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="index.html#home-section" class="dropdown-item">How it works</a>
+                            <a href="index.html#home-about-us" class="dropdown-item">Our Rates</a>
+                        </div>
+                    </div>
+    
+                    <div class="nav-item dropdown">
+                        <a href="services.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="services.html#test-prep-section" class="dropdown-item">Test Prep</a>
+                            <a href="services.html" class="dropdown-item">Subject Tutoring</a>
+                        </div>
+                    </div>
+    
+    
+                    <div class="nav-item dropdown">
+                        <a href="about.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">About Us</a>
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="about.html#who-we-are-section" class="dropdown-item">Who we are</a>
+                            <a href="about.html#our-team-section" class="dropdown-item">Our Team</a>
+                        </div>
+                    </div>
+    
+                    <!--
+                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="hdiw.html" class="nav-item nav-link">How does it works</a>
+                    -->
+    
+                    <a href="contact.html" class="nav-item nav-link" id="nav-join-now">Contact<i class="fa fa-arrow-right ms-3"></i></a>
+                </div>
+                <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Contact<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
-            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
 
 
     <!-- Header Start -->
@@ -79,6 +112,154 @@
         </div>
     </div>
     <!-- Header End -->
+
+    <!-- Test Prep Start -->
+
+    <div class="container-xxl py-5 category" id="test-prep-section">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Test Prep</h6>
+                <h1 class="mb-5">SAT/ACT</h1>
+                <p class="mb-4">At TNM we offer personalized SAT/ACT test prep services to help students improve their scores and achieve their academic goals. Our test prep process begins with a comprehensive practice test, which helps us evaluate the student's strengths, weaknesses, and learning style. Based on the results of the practice test, as well as the student's background, needs, availability, and goals, we develop an individualized test prep plan and carefully select a tutor who will be the best fit for the student.</p>
+                <p class="mb-4">Our experienced tutors TNM’s test prep materials and strategies to help students improve their scores, including practice tests, targeted skill-building exercises, and personalized feedback. We also provide guidance and support throughout the entire test prep process, from setting goals and developing study plans to managing test anxiety and preparing for exam day.</p>
+                <p class="mb-4">Whether you're looking to improve your SAT/ACT scores for college admissions or scholarship opportunities, our test prep services can help you achieve your goals. Contact us today to learn more about our personalized SAT/ACT test prep services.</p>
+                <table class="table table-hover table-bordered">
+                    <thead class="table-secondary">
+                        <th scope="col">Test Prep</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Pricing</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>SAT</b></th>
+                            <td>1 hour</td>
+                            <td>$60</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>ACT</b></th>
+                            <td>2 hours</td>
+                            <td>$120</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Prep End -->
+
+    <!-- Subject Tutoring Start -->
+   
+    <div class="container-xxl py-5 category" id="subject-tutoring-section">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Tutoring</h6>
+                <h1 class="mb-5">Subject Tutoring</h1>
+                <p class="mb-4">Welcome to our Subject Tutoring service! We understand that staying on top of your studies can be challenging, especially with busy schedules and other commitments. That's why we're here to help! Our experienced tutors will work with you to create a personalized plan that meets your individual needs and goals.</p>
+                <p class="mb-4">To get started, we'll ask you to share your subject curriculum, previous tests, and homework assignments. This information will help us to better understand your strengths and weaknesses and build a plan that's tailored specifically to you.</p>
+                <p class="mb-4">Whether you're struggling to keep up with your lessons or preparing for a big exam, we're here to provide the support and guidance you need to succeed. Our carefully selected tutor will work with you every step of the way, helping you to stay on track, tackle challenging concepts, and build the skills you need to excel.</p>
+                <p class="mb-4">So why wait? Sign up for our Subject Tutoring service today and start achieving your academic goals with confidence!</p>
+                <table class="table table-bordered">
+                    <caption>If you don't see your subject listed here, please don't hesitate to contact us, as we may be able to help you with that subject as well.</caption>
+                    <thead class="table-primary">
+                        <th scope="col">Subject</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Description</th>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Math</b></th>
+                            <td>Elementary, Middle, High school, College, Graduate school</td>
+                            <td>Basic and advanced mathematics, including arithmetic, algebra, geometry, trigonometry, and calculus.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Chemistry</b></th>
+                            <td>Middle, High school, College, Graduate school</td>
+                            <td>General and organic chemistry, stoichiometry, chemical reactions, acids and bases, and more.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Physics</b></th>
+                            <td>High school, College, Graduate school</td>
+                            <td>Mechanics, thermodynamics, electromagnetism, optics, modern physics, and more.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Biology</b></th>
+                            <td>Middle, High school, College, Graduate school</td>
+                            <td>Anatomy, physiology, genetics, ecology, evolution, and other life sciences.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>English</b></th>
+                            <td>Elementary, Middle, High school, College, Graduate school</td>
+                            <td>Writing, reading comprehension, grammar, vocabulary, and literature analysis.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>History</b></th>
+                            <td>Elementary, Middle, High school, College, Graduate school</td>
+                            <td>World history, U.S. history, government, economics, and other social studies.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Statistics</b></th>
+                            <td>High school, College, Graduate school</td>
+                            <td>Descriptive and inferential statistics, probability, hypothesis testing, and more.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered">
+                    <thead class="table-secondary">
+
+                    </thead>
+                    <tbody>
+                        <tr>                        
+                            <td scope="col" rowspan="10">Subject Mentoring</td>
+                            <td scope="col">Level</td>
+                            <td scope="col">Duration</td>
+                            <td scope="col">Pricing</td>
+                        <tr>
+                            <td rowspan="3"><b>Elementary</b></td>
+                            <td>30 min</td>
+                            <td>$15</td>
+                        </tr>
+                        <tr>
+                            <td>1 hour</td>
+                            <td>$25</td>
+                        </tr>
+                        <tr>
+                            <td>2 hours</td>
+                            <td>$45</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3"><b>Middle</b></td>
+                            <td>30 min</td>
+                            <td>$17</td>
+                        </tr>
+                        <tr>
+                            <td>1 hour</td>
+                            <td>$30</td>
+                        </tr>
+                        <tr>
+                            <td>2 hours</td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3"><b>High</b></td>
+                            <td>30 min</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr>
+                            <td>1 hour</td>
+                            <td>$35</td>
+                        </tr>
+                        <tr>
+                            <td>2 hours</td>
+                            <td>$60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subject Tutoring End -->
 
 
     <!-- Categories Start -->
