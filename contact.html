@@ -113,6 +113,22 @@
     </div>
     <!-- Header End -->
 
+    <!-- Get Started! Start -->
+    
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
+                <h1 class="mb-5">Get Started!</h1>
+            </div>
+            <p class="mb-4">Are you ready to take your education to the next level? We are here to help you reach your full potential and achieve your goals. Our team of experienced educators is dedicated to providing you with the knowledge and tools you need to succeed. Whether you are struggling with a particular subject, preparing for a test or exam, or simply looking to expand your knowledge, we have a program that is tailored to your specific needs. Don't wait any longer to start your learning journey with us. Every day that you delay is a missed opportunity to unlock your full potential. So take that first step today and join the thousands of students who have already discovered the benefits of our programs. We can't wait to help you achieve your dreams!</p>
+            <p class="mb-4">When we can’t answer the phone, the best way to reach us is by email. Please complete our webform and we will follow up as quickly as possible.</p>
+
+        </div>
+    </div>
+
+    
+    <!-- Get Started! End -->
 
     <!-- Contact Start -->
     <div class="container-xxl py-5">
@@ -170,30 +186,78 @@
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <form id="contactForm">
                         <div class="row g-3">
+                            <div class="col-12">
+                                <label>I’m interested in:</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="interestOptions" id="interestRadio1" value="ACT and SAT" checked>
+                                    <label class="form-check-label" for="interestRadio1">ACT and SAT</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="interestOptions" id="interestRadio2" value="AP Exam Prep">
+                                    <label class="form-check-label" for="interestRadio2">AP Exam Prep</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="interestOptions" id="interestRadio3" value="Subject Tutoring">
+                                    <label class="form-check-label" for="interestRadio3">Subject Tutoring</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="interestOptions" id="interestRadio4" value="Other">
+                                    <label class="form-check-label" for="interestRadio4">Other</label>
+                                </div>
+                            </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Parent Full Name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                    <label for="name">Your Parent Full Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Parent Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                                    <label for="email">Your Parent Email</label>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Your Parent Phone" pattern="^[0-9]+$" required>
+                                    <label for="phone">Your Parent Phone</label>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea> 
-                                    <label for="message">Message</label>
+                                    <input type="text" class="form-control" id="school" placeholder="Your School Name" pattern="^[A-Za-z0-9]+$" required>
+                                    <label for="school">Your School Name</label>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <label for="studentGrade">Student Grade Level:</label>
+                                <select class="form-control"  style="background-color: #fff;" id="studentGrade">
+                                <option>4th</option>
+                                <option>5th</option>
+                                <option>6th</option>
+                                <option>7th</option>
+                                <option>8th</option>
+                                <option>9th</option>
+                                <option>10th</option>
+                                <option>11th</option>
+                                <option>12th</option>
+                                <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="referred" placeholder="Referred by" pattern="^[A-Za-z0-9]+$">
+                                    <label for="referred">Referred by</label>
+                                </div>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="LAnything else you’d like us to know?" id="message" style="height: 150px"></textarea> 
+                                <label for="message">Anything else you’d like us to know?</label>
+                            </div>
+                            <div class="form-check" style="display: flex; justify-content: center;">
+                                <input class="form-check-input" type="checkbox" value="I’m not a robot" id="robot" required>
+                                <label class="form-check-label" for="robot">I’m not a robot</label>
+                              </div>
                             <div class="contact-form-loader text-center none">
                                 <img src="svg/loader.svg" alt="Sending...">
                               </div>      
