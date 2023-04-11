@@ -564,3 +564,18 @@
     }
 }
 
+.tutor-container{
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .tutor-container{
+        flex-direction: row;
+    }
+    
+    .tutor-container-reverse{
+        flex-direction: row-reverse;
+    }
+}
+
+
