@@ -501,6 +501,12 @@
     width: 60%;
 }
 
+/* About */
+
+.img-about-container {
+    min-height: 400px;
+}
+
 @media (max-width: 991.98px) {
     .aside-container {
         flex-direction: column;   
@@ -530,6 +536,9 @@
     .info-aside-container > .btn {
         display: block;  
         margin: 0 auto;
+    }
+    .img-about-container {
+        min-height: fit-content;
     }
 }
 
@@ -568,7 +577,7 @@
     flex-direction: column;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .tutor-container{
         flex-direction: row;
     }
