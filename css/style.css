@@ -592,7 +592,7 @@
         flex-direction: row-reverse;
     }
     .owl-nav{
-        display: flex!important ;
+        display: flex!important;
     }
 }
 
