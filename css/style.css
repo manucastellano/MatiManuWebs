@@ -567,15 +567,21 @@
     display: block;
 }
 
+
+.tutor-container{
+    flex-direction: column;
+}
+
+.owl-nav{
+    display: none!important;
+}
+
 @media (min-width: 992px) {
     #nav-join-now {
         display: none;
     }
 }
 
-.tutor-container{
-    flex-direction: column;
-}
 
 @media (min-width: 768px) {
     .tutor-container{
@@ -584,6 +590,9 @@
     
     .tutor-container-reverse{
         flex-direction: row-reverse;
+    }
+    .owl-nav{
+        display: flex!important ;
     }
 }
 
