@@ -185,7 +185,7 @@
     top: 50%;
     right: 8%;
     transform: translateY(-50%);
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -572,10 +572,6 @@
     flex-direction: column;
 }
 
-.owl-nav{
-    display: none!important;
-}
-
 @media (min-width: 992px) {
     #nav-join-now {
         display: none;
@@ -591,8 +587,8 @@
     .tutor-container-reverse{
         flex-direction: row-reverse;
     }
-    .owl-nav{
-        display: flex!important;
+    .header-carousel .owl-nav{
+        display: flex;
     }
 }
 
